@@ -1,8 +1,8 @@
 #!/bin/bash
-# cutspace.sh: This script cuts "space" and "zenkaku-space" and "tab",
-#              and delete blank lines and commented lines. 
-# usage: ./cutspace.sh filename
-#        cat filename | ./cutspace.sh -
+# txtformatter.sh: This script cuts "space" and "zenkaku-space" and "tab",
+#                  and delete blank lines and commented lines. 
+# usage: ./txtformatter.sh filename
+#        cat filename | ./txtformatter.sh -
 
 TMPFILE=/tmp/cutspace.$$.$$
 
