@@ -16,7 +16,7 @@ then
     exit 9
 fi
 
-if [ $1 eq "-" ]; 
+if [ $1 = "-" ]; 
 then 
     while read line
     do
