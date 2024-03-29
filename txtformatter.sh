@@ -6,6 +6,12 @@
 
 TMPFILE=/tmp/cutspace.$$.$$
 
+if [ ! -x /usr/bin/sed ];
+then
+  echo "/usr/bin/sed : not found"
+  exit 9
+fi
+
 function funct_cut_space () {
     /usr/bin/sed -e 's/　/ /g' $1 | /usr/bin/sed -e 's/\t/ /g' | /usr/bin/sed -e 's/\ *$//g' | /usr/bin/sed -e 's/^\ *//g' | /usr/bin/grep -v ^$ | /usr/bin/grep -v ^#
 }
